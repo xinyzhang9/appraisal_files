@@ -1,0 +1,246 @@
+﻿/*==================================================
+ * LoanAppFeatureStyle.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-01-28
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+/*==================================================
+ * Master List Directive Page Styling
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .employment-info .item-box,
+    .other-income .item-box {
+        max-width: 500px;
+    }
+
+    .assets .item-box {
+        max-width: 640px;
+    }
+}
+
+/*==================================================
+ * Credit Loading Icon
+ * ===============================================*/
+
+.credit-results .credit-loading-icon {
+    font-size: 250px;
+    color: #727272;
+}
+
+/*==================================================
+ * Government Monitoring Screen (aka Race)
+ * ===============================================*/
+
+.race .checkbox label {
+    padding-left: 10px;
+}
+
+/*==================================================
+ * Employment screen from to date input
+ * ===============================================*/
+
+.employment-starting-date {
+    border: none;
+    border-color: transparent;
+    outline: none !important;
+    float: left;
+    min-width: 110px;
+    width: 45% !important;
+    text-align: left;
+    padding-right: 5px;
+}
+
+.employment-ending-date {
+    border: none;
+    border-color: transparent;
+    outline: none !important;
+    min-width: 100px;
+    width: 45% !important;
+    text-align: center;
+    justify-content: center !important;
+}
+
+.employment-form-start-end-date {
+    padding-left: 5px !important;
+    padding-right: 0px !important;
+}
+
+.employment-form-current-date {
+    min-width: 80px !important;
+    width: 45% !important;
+    border: none;
+    border-width: 0px !important;
+    margin-top: 2px;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+}
+
+.employment-form-to {
+    width: 10px !important;
+}
+
+.employment-item-box {
+    min-width: 320px !important;
+}
+
+.employment-item-box-basesalary {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.employment-item-box-companyname {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+/*==================================================
+ * Declarations Page Styles
+ * ===============================================*/
+
+.declarations .form-group label {
+    text-align: left;
+}
+
+.declaration-question-text {
+    max-width: 530px;
+}
+
+/*==================================================
+ * Summary
+ * ===============================================*/
+
+.edit-link {
+    color: #3981c4;
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit-link-bold {
+    font-weight: 700;
+}
+
+.summary-section {
+    margin-bottom: 50px;
+}
+
+.summary-subsection {
+    margin-bottom: 25px;
+    width:750px;
+}
+
+.summary-subtitle {
+    margin-bottom: 2px;
+}
+
+.summary-subtitle-text {
+    font-weight: bold;
+}
+
+.summary-form {
+    margin-bottom: 3px !important;
+}
+
+    .summary-form .control-label {
+        padding-top: 0px;
+    }
+
+    
+/*==================================================
+ * Credit Scores
+ * ===============================================*/
+
+.credit-score-region {
+    padding-bottom: 40px;
+}
+
+.credit-score-row {
+    height: 27px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.credit-bar {
+    width: 100%;
+    background-color: #E2F5EA;
+    color: #1FB25A;
+    font-size: 19px;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-right: 9px;
+    padding-left: 9px;
+}
+
+    .credit-bar.right {
+        float: right;
+    }
+
+.credit-bar-50 {
+    width: 50%;
+}
+
+.credit-bar-60 {
+    width: 60%;
+}
+
+.credit-bar-75 {
+    width: 75%;
+}
+
+.credit-label {
+    font-size: 16px;
+    color: #9d9d9d;
+    padding-top: 3px;
+}
+
+
+/*==================================================
+ * eConsent
+ * ===============================================*/
+
+.econsent-scrollbox {
+    height: 185px;
+    overflow-y: scroll;
+    border: 1px solid #b1aaaa;
+    padding: 17px 7px 20px 7px;
+    font-size: 12px;
+    line-height: 1.3em;
+    background-color: white;
+}
+
+.econsent-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.econsent-heading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.econsent-indent {
+    padding-left: 40px;
+}
+
+/*==================================================
+ * Logged Out
+ * ===============================================*/
+
+.img-mail-sm {
+    height: 45px;
+}
+
+/*==================================================
+ * PropertyPage classes
+ * ===============================================*/
+
+.property-info .form-control:disabled {
+    cursor: default;
+}

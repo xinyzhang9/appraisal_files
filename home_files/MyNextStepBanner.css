@@ -1,0 +1,68 @@
+﻿/*==================================================
+ * MyNextStepBanner.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-27
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.my-next-step-banner {
+    position: relative;
+    margin-top: 0px;
+    background-color: #f9f9f9;
+    height: 150px;
+    padding: 10px 0px 0px 20px;
+}
+@media (min-width: 768px) {
+    .my-next-step-banner {
+        margin-top: 90px;
+        padding-top: 30px;
+    }
+}
+
+/*==================================================
+ * My Next Step Banner - Icon
+ * ===============================================*/
+
+.my-next-step-banner .banner-icon {
+    display: none;
+}
+@media (min-width: 768px) {
+    .my-next-step-banner .banner-icon {
+        position: absolute;
+        left: -137px;
+        top: 23px;
+        display: inline-block;
+        font-size: 50px;
+        color: #1FB25A;
+    }
+}
+
+/*==================================================
+ * My Next Step Banner - Title Region
+ * ===============================================*/
+
+.my-next-step-banner .banner-title-region {
+    position: relative;
+    display: block;
+    max-width: 510px;
+    padding-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-left: inherit;
+}
+.my-next-step-banner .banner-title-text-region {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -40px;
+    line-height: 25px;
+}
+.my-next-step-banner .banner-title-text {
+    font-size: 25px;
+}
+.my-next-step-banner .banner-subtitle-text {
+    font-size: 17px;
+}

@@ -1,0 +1,2049 @@
+﻿/*region commonFeatureClasses*/
+
+.my-next-step-breadcrumb-finish-flag {
+    font-size: 27px;
+    color: #727272;
+}
+
+.appraisal_month_select {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.appraisal_year_select {
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.pdr_0 {
+    padding-right: 0px;
+}
+
+.pdr_5 {
+    padding-right: 5px;
+}
+
+/*==================================================
+ * General Classes
+ * ===============================================*/
+
+a[ng-click] {
+    /*make all links that don't have an href still behave like links*/
+    cursor: pointer;
+}
+
+/*Bootstrap has breakpoints at 768px(sm), 992px(md), 1200px(lg) */
+
+@media (min-width: 768px) {
+    /* .text-sm-left aligns text to the left only on wider screens, otherwise centered */
+    .text-sm-left {
+        text-align: left !important;
+    }
+}
+
+/*==================================================
+ * View Related Classes
+ * ===============================================*/
+
+.page-title {
+    color: #1fb25a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+    .page-title .page-title-icon {
+        font-size: 25px;
+        color: #1FB25A;
+        font-weight: bold;
+        margin-right: 7px;
+    }
+
+.page-content {
+    margin-top: 30px;
+    padding: 0% 5%;
+    margin-bottom: 150px;
+}
+
+.page-body {
+    margin-top: 5px;
+}
+
+@media (min-width: 1200px) {
+    .page-content {
+        padding: 0% 10%;
+    }
+}
+
+.imp-psection-subtitle > div {
+    display: inline-block;
+}
+
+    .imp-psection-subtitle > div.subtitle-text {
+        margin-top: -8px;
+        margin-left: 2px;
+        vertical-align: text-top;
+    }
+
+.green-separator {
+    margin: 10px 0px;
+    border-top: 2px solid #1fb25a;
+}
+
+/*endregion commonFeatureClasses*/
+
+
+
+/*==================================================
+ * Settings icon
+ * ===============================================*/
+
+.signout i {
+    color: white;
+    opacity: 0.7;
+    font-size: 22px;
+    margin: 6px 15px 0px 15px;
+}
+
+    .signout i:hover {
+        opacity: 0.9;
+    }
+
+.navbar .nav li.dropdown.open > .dropdown-toggle {
+    background-color: transparent !important;
+    /* to override .navbar .nav li.dropdown.open>.dropdown-toggle { background-color: white; } in iMPLayoutCss-1.css */
+}
+
+/*endregion navigationBar*/
+
+
+/*region authentication*/
+
+
+/*==================================================
+ * Authentication Page
+ * ===============================================*/
+
+.auth {
+    width: 100%;
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 15px;
+}
+
+    .auth .help {
+        text-align: right;
+        margin: 10px;
+        padding-right: 5%;
+    }
+
+    .auth .glyphicon-question-sign {
+        color: blue;
+    }
+
+    .auth div.center {
+        margin-top: 70px;
+    }
+
+    .auth h2 {
+        margin-left: -47px;
+        font-size: 17px;
+        /*    font-weight: lighter;*/
+    }
+
+    .auth .bar-well {
+        width: 100%;
+        max-width: 800px;
+        background: #FFF;
+        margin: 35px auto;
+        padding: 20px 0px;
+        margin-left: -11px;
+        position: relative;
+    }
+
+@media (min-width: 768px) {
+    .auth .bar-well {
+        /*The padding here gives it the left offset on widescreen*/
+        padding: 25px 0px 20px 83px;
+        margin: auto;
+    }
+}
+
+.auth .bar-well:before,
+.auth .bar-well:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 300px / 15px;
+    border-radius: 300px / 15px;
+}
+
+@media (min-width: 768px) {
+    .auth .bar-well:before,
+    .auth .bar-well:after {
+        left: 50px;
+        right: 50px;
+    }
+}
+
+.auth .auth-name-label {
+    padding-top: 7px;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    direction: rtl;
+}
+
+@media (min-width: 768px) {
+    .auth .auth-name-label > label {
+        /*The margin here pushes the name closer to the input */
+        margin-right: -17px;
+    }
+}
+
+.auth label {
+    /*Needed for mvc user agent stylesheet giving label a height of 21*/
+    height: 17px;
+    font-weight: 100;
+}
+
+.auth .password-input-group {
+    margin-top: 2px;
+    width: 220px;
+    /* the display: inline-block; is the key to getting it to center on small devices*/
+    display: inline-block;
+}
+
+    .auth .password-input-group input[type="password"] {
+        padding-top: 7px;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        max-width: 220px;
+        color: #9E9E9E;
+        /* Bootstrap override for .input-group .form-control:first-child that sets right border radii to 0 */
+        border-radius: 4px !important;
+    }
+
+    .auth .password-input-group div.input-state {
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        z-index: 100;
+    }
+
+    .auth .password-input-group.verified .input-state {
+        color: #1fb25a;
+    }
+
+        .auth .password-input-group.verified .input-state:after {
+            content: "Verified";
+        }
+
+    .auth .password-input-group.incorrect .input-state {
+        color: #ef1126;
+    }
+
+        .auth .password-input-group.incorrect .input-state:after {
+            content: "Incorrect PIN";
+        }
+
+.auth .input-group.incorrect input[type="password"] {
+    border: 1px solid #ef1126;
+}
+
+.auth .continue-without {
+    padding-top: 6px;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+    .auth .continue-without > a {
+        color: #208ddc;
+        text-decoration: none;
+    }
+
+@media (min-width: 768px) {
+    .auth .continue-without > a {
+        /*The margin here pushes the link text closer to the input*/
+        margin-left: -10px;
+    }
+}
+
+.auth input.form-control,
+.auth div.auth-response {
+    min-width: 240px;
+}
+
+.auth input[type="email"].ng-dirty.ng-invalid:after:not([disabled]),
+.auth input[type="email"].ng-touched.ng-invalid:after:not([disabled]) {
+    content: "please enter email";
+}
+
+.auth input[type="password"].ng-dirty.ng-invalid:not([disabled]),
+.auth input[type="password"].ng-touched.ng-invalid:not([disabled]) {
+    content: "please enter password";
+}
+
+/*endregion authentication*/
+
+
+/*region eSigningRoom*/
+
+
+/*==================================================
+ * eSigning Room
+ * ===============================================*/
+
+.esigningRoom-container {
+    margin-top: 181px;
+}
+
+.eSigningRoomIFrame {
+    width: 100%;
+    height: 80vh;
+    border: 0px;
+}
+
+/*endregion eSigningRoom*/
+
+
+/*region successModal*/
+
+
+/*==================================================
+ * Success Modal
+ * ===============================================*/
+
+.success-modal {
+    width: 92.5%;
+    height: 85.5%;
+    margin: 30px;
+    border-radius: 3px;
+    align-content: center;
+}
+
+    .success-modal .success-header {
+        font-size: 17px;
+        color: #3d3d3d;
+        font-weight: bold;
+        border-bottom: solid 1px gray;
+    }
+
+    .success-modal .success-font {
+        font-size: 15px;
+        color: #3d3d3d;
+    }
+
+    .success-modal .success-icon {
+        margin-top: 20px;
+    }
+
+    .success-modal .thank-you-text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .success-modal .btn-continue {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        padding-top: 6px;
+        margin-top: 35px;
+    }
+
+/*endregion successModal*/
+
+
+/*region eConsentSettings*/
+
+
+/*==================================================
+ * eConsent Settings
+ * ===============================================*/
+
+.econsent-settings {
+    font-size: 21px;
+    color: #3d3d3d;
+}
+
+    .econsent-settings .section-margin {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .econsent-settings .page-body {
+        margin-top: 25px;
+    }
+
+    .econsent-settings .column-header {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .econsent-settings .acceptance {
+        line-height: 28px;
+        font-size: 13px;
+    }
+
+@media (min-width: 992px) {
+    .econsent-settings .acceptance {
+        min-height: 117px;
+    }
+}
+
+.econsent-settings .acceptance .img-check {
+    margin-top: -3px;
+    margin-right: 7px;
+    height: 20px;    
+}
+
+.econsent-settings .acceptance .img-check-placemark {
+    margin-top: -3px;
+    margin-right: 7px;
+    height: 20px;
+    width: 24px;
+}
+
+.econsent-settings .btn {
+    font-size: 15px;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.econsent-settings .btn-save {
+    font-size: 15px;
+    height: 40px;
+}
+
+.econsent-settings .scrollbox {
+    height: 185px;
+    overflow-y: scroll;
+    font-size: 12px;
+    border: 1px solid #E6E6E6;
+    padding: 5px 5px 10px 5px;
+    line-height: 1.3em;
+    z-index: -1;
+}
+
+.econsent-settings .title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.econsent-settings .heading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.econsent-settings .indent {
+    padding-left: 40px;
+}
+
+.econsent-settings .decline-header {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.econsent-settings .econsent-form {
+    padding: 0px 0px 0px 0px;
+}
+
+.econsent-settings label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.econsent-settings .checkboxes {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.econsent-settings .checkbox-text {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+/*endregion eConsentSettings*/
+
+
+/*region dashboard*/
+
+/*==================================================
+ * DashboardHomeBanner.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-03-01
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.dashboard-home-banner {
+    margin-top: 0px;
+    height: 60px;
+    background-color: #F9F9F9;
+    margin-bottom: 140px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home-banner {
+        padding-top: 13px;
+        margin-top: 95px;
+        min-height: 130px;
+        margin-bottom: 0px;
+    }
+}
+
+/* ================================================
+ * Dashboard Banner - Need Help Region
+ * ==============================================*/
+
+.dashboard-home-banner .need-help-region {
+    line-height: 16px;
+    padding-top: 12px;
+}
+
+.dashboard-home-banner .need-help-text {
+    font-size: 13px;
+    color: #727272;
+}
+
+.dashboard-home-banner .need-help-phone {
+    font-size: 15px;
+    color: #3d3d3d;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home-banner .need-help-region {
+        display: none;
+    }
+}
+
+/* ================================================
+ * Dashboard Banner - Title Region
+ * ==============================================*/
+
+.dashboard-home-banner .banner-title-region {
+    margin-top: 40px;
+}
+
+.dashboard-home-banner .banner-title-inner-region {
+    position: relative;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================================
+ * Dashboard Banner - My Next Step Text
+ * ==============================================*/
+
+.dashboard-home-banner .my-next-step-text {
+    color: #208ddc;
+    font-size: 27px;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 21px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home-banner .my-next-step-text {
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+}
+
+/* ================================================
+ * Dashboard Banner - Banner Button
+ * ==============================================*/
+
+.dashboard-home-banner .banner-button {
+    margin-top: -17px;
+    height: 50px;
+    width: 245px;
+}
+
+.dashboard-home-banner .banner-button-icon {
+    font-size: 21px;
+    margin-top: 2px;
+}
+
+.dashboard-home-banner .banner-button-text {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-left: 9px;
+    font-size: 17px;
+}
+
+@media (min-width: 405px) {
+    .dashboard-home-banner .banner-button {
+        margin-left: 15px;
+    }
+}
+
+/*==================================================
+ * DashboardHome.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-03-01
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.dashboard-home-content {
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================================
+ * Dashboard Home - Detail Region
+ * ==============================================*/
+
+.dashboard-home .detail-region {
+    margin-top: 37px;
+    text-align: justify;
+    width: 100%;
+}
+
+.dashboard-home .detail-stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.dashboard-home .detail-group {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    margin: 0px 5px 20px 5px;
+}
+
+.dashboard-home .address-group {
+    line-height: 19px;
+    margin-bottom: 25px;
+}
+
+.dashboard-home .detail-value {
+    font-size: 17px;
+    color: #727272;
+}
+
+.dashboard-home .detail-label {
+    font-weight: normal;
+    font-size: 13px;
+    color: #bdbebe;
+}
+
+/* ================================================
+ * Dashboard Home - Title Region
+ * ==============================================*/
+
+.dashboard-home .title-region {
+    margin-top: -15px;
+}
+
+.dashboard-home .section-subtitle {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #727272;
+}
+
+/* ================================================
+ * Dashboard Home - Status Region
+ * ==============================================*/
+
+.dashboard-home .status-region {
+    position: relative;
+    text-align: center;
+    margin-top: 13px;
+    border-top: 1px solid #bdbebe;
+    border-bottom: 1px solid #bdbebe;
+    height: 70px;
+    padding-top: 13px;
+    margin-left: -10px;
+    margin-right: -10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home .status-region {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .dashboard-home .top-border-md {
+        position: relative;
+        top: -13px;
+        border-top: 1px solid #bdbebe;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.dashboard-home .section-subtitle {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #727272;
+}
+
+.dashboard-home .breadcrumb-arrow {
+    display: inline-block;
+    font-size: 11px;
+    color: #c6c6c6;
+    margin: 0px 3px;
+}
+
+.dashboard-home .finish-flag-icon {
+    position: relative;
+    top: 6px;
+    font-size: 27px;
+    color: #727272;
+}
+    .dashboard-home .finish-flag-icon.complete {
+            color: #1fb25a;
+    }
+
+
+
+/* ================================================
+ * Dashboard Home - Status Text
+ * ==============================================*/
+
+.dashboard-home .status-text {
+    display: inline-block;
+    font-size: 17px;
+    color: #727272;
+    margin-bottom: 10px;
+}
+
+    .dashboard-home .status-text.complete {
+        font-size: 17px;
+        color: #1fb25a;
+    }
+
+    .dashboard-home .status-text.active {
+        font-size: 17px;
+        color: #3d3d3d;
+        border-bottom: 2px solid #3d3d3d;
+    }
+
+    .dashboard-home .status-text.complete-bold {
+        font-size: 17px;
+        color: #3d3d3d;
+        font-weight: bold;
+        border-bottom: 3px solid #3d3d3d;
+    }
+
+    .dashboard-home .status-text.active-bold {
+        font-size: 17px;
+        color: #3d3d3d;
+        font-weight: bold;
+        border-bottom: 3px solid #3d3d3d;
+    }
+
+/* ================================================
+ * Dashboard Home - Bottom Region
+ * ==============================================*/
+
+.dashboard-home .bottom-region {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home .bottom-region {
+        margin: 0px 70px;
+    }
+}
+
+/* ================================================
+ * Dashboard Home - Progress Region
+ * ==============================================*/
+
+.dashboard-home .progress-region {
+    display: inline-block;
+    position: relative;
+    top: 25px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home .progress-region {
+        display: inline-block;
+    }
+}
+
+.dashboard-home .complete-text {
+    display: inline-block;
+    position: absolute;
+    top: 110px;
+    left: 65px;
+    font-size: 15px;
+    color: #BFC0D5;
+}
+
+/* ================================================
+ * Dashboard Home - My Action Items Region
+ * ==============================================*/
+
+.dashboard-home .my-action-items-region {
+    margin-top: 50px;
+    text-align: left;
+    width: 140px;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #727272;
+    line-height: 36px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home .my-action-items-region {
+        margin-top: 0px;
+        display: inline-block;
+        float: left;
+    }
+}
+
+.dashboard-home .action-items-container {
+    margin-top: 10px;
+}
+
+.dashboard-home .action-item {
+    position: relative;
+    color: #9d9d9d;
+}
+
+    .dashboard-home .action-item.active {
+        color: #208ddc;
+        cursor: pointer;
+    }
+
+    .dashboard-home .action-item .action-item-icon {
+        position: absolute;
+        top: 10px;
+        left: -29px;
+        font-size: 19px;
+    }
+
+
+/* ================================================
+ * Dashboard Home - My Contacts Region
+ * ==============================================*/
+
+.dashboard-home .my-contacts-region {
+    margin-top: 50px;
+    text-align: left;
+    width: 140px;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #727272;
+    line-height: 36px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-home .my-contacts-region {
+        margin-top: 0px;
+        display: inline-block;
+        float: right;
+    }
+}
+
+.dashboard-home .contact-items-container {
+    margin-top: 10px;
+}
+
+.dashboard-home .contact-item {
+    position: relative;
+}
+
+.dashboard-home .contact-item-icon {
+    position: absolute;
+    top: 0px;
+    left: -29px;
+    font-size: 19px;
+    color: #9d9d9d;
+    cursor: pointer;
+}
+
+/* ================================================
+ * Dashboard Home - Contact Details Region
+ * ==============================================*/
+
+.dashboard-home .contact-details-region {
+    margin-top: -3px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #727272;
+    line-height: 19px;
+}
+
+.dashboard-home .contact-name {
+    font-weight: bold;
+    font-size: 15px;
+    color: #3d3d3d;
+}
+
+.dashboard-home .contact-phone {
+    color: #208ddc;
+}
+
+/*endregion dashboard*/
+
+/*==================================================
+ * MyLoans.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-27
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+
+/* ================================================
+ * My Loans - Loan Box Region
+ * ==============================================*/
+
+.my-loans .loan-box-region {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.my-loans .loan-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 350px;
+    border-radius: 3px;
+    border: 1px solid #bdbebe;
+    text-align: center;
+    padding: 1px;
+    margin: 0px 10px 20px 10px;
+    cursor: pointer;
+}
+
+    .my-loans .loan-box:hover {
+        padding: 0px;
+        border: 2px solid #208ddc;
+    }
+
+    .my-loans .loan-box:active {
+        background: #e1f9ff;
+    }
+
+.my-loans .loan-box-title-region {
+    margin-top: 10px;
+    line-height: 15px;
+}
+
+.my-loans .loan-box-title-text {
+    font-weight: bold;
+    font-size: 17px;
+    color: #3d3d3d;
+}
+
+/* ================================================
+ * My Loans - Loan Box Stats Region
+ * ==============================================*/
+
+.my-loans .loan-box-stats-region {
+    margin-top: 17px;
+    white-space: nowrap;
+}
+
+.my-loans .loan-box-stats-group {
+    display: inline-block;
+    text-align: left;
+    margin: 0px 12px;
+}
+
+.my-loans .loan-box-value-text {
+    font-size: 17px;
+    color: #727272;
+}
+
+.my-loans .loan-box-label {
+    white-space: nowrap;
+    font-size: 13px;
+    color: #bdbebe;
+    font-weight: normal;
+}
+
+/* ================================================
+ * My Loans - Loan Box Progress Region
+ * ==============================================*/
+
+.my-loans .loan-box-progress-region {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.my-loans .temp-loan-box-progress-image {
+    height: 150px;
+}
+
+/* ================================================
+ * My Loans - Loan Box Progress Title Region
+ * ==============================================*/
+
+.my-loans .loan-box-progress-title-region {
+    margin-top: 5px;
+}
+
+.my-loans .loan-box-progress-label {
+    font-size: 17px;
+    color: #727272;
+    font-weight: normal;
+}
+
+.my-loans .loan-box-progress-value-text {
+    font-size: 17px;
+    color: #3d3d3d;
+}
+
+/* ================================================
+ * My Loans - Work on this Loan Region
+ * ==============================================*/
+
+.my-loans .work-on-this-loan-region {
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+.my-loans .work-on-this-loan-text {
+    color: #208ddc;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================================================
+ * My Loans - Add a New loan Box
+ * ==============================================*/
+
+.my-loans .add-loan-box {
+    padding-top: 115px;
+}
+
+    .my-loans .add-loan-box:hover {
+        padding-top: 114px;
+    }
+
+.my-loans .add-new-loan-icon {
+    font-size: 51px;
+    color: #208ddc;
+}
+
+.my-loans .add-new-loan-title-region {
+    margin-top: 13px;
+}
+
+/* ================================================
+ * View Appraisal 
+ * ==============================================*/
+
+.my-loans .view-appraisal-icon {
+    font-size: 51px;
+    color: #1FB25A;
+}
+
+
+
+/*==================================================
+ * UploadDocuments.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-27
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.upload-docs {
+    margin-top: 20px;
+}
+
+/* ================================================
+ * Upload Documents - Left Column
+ * ==============================================*/
+
+@media (min-width: 1280px) {
+    .upload-docs .left-column {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 40px;
+        max-width: 880px;
+    }
+}
+
+@media (min-width: 1320px) {
+    .upload-docs .left-column {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 40px;
+        width: 100%;
+        max-width: 920px;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Right Column
+ * ==============================================*/
+
+.upload-docs .right-column {
+    margin-top: 40px;
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .upload-docs .right-column {
+        margin-top: 0px;
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+        width: 300px;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Bottom Region
+ * ==============================================*/
+
+.upload-docs .bottom-region {
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid #bdbebe;
+    min-height: 60px;
+    margin-bottom: 70px;
+}
+
+@media (min-width: 1280px) {
+    .upload-docs .bottom-region {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Step Title Region
+ * ==============================================*/
+
+.upload-docs .step-title-region {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+}
+
+.upload-docs .number-circle {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* ================================================
+ * Upload Documents - Step Title Text Region
+ * ==============================================*/
+
+.upload-docs .step-title-text-region {
+    margin-left: 33px;
+}
+
+.upload-docs .step-title-text {
+    font-size: 21px;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+/* ================================================
+ * Upload Documents - Requested Docs List
+ * ==============================================*/
+
+.upload-docs .requested-docs-list-empty {
+    padding-top: 10px;
+}
+
+.upload-docs .doc-item {
+    border-bottom: 1px solid #e2e2e2;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    min-height: 60px;
+}
+
+.upload-docs .doc-title {
+    font-size: 15px;
+    color: #3d3d3d;
+}
+
+.upload-docs .doc-description {
+    font-size: 13px;
+    color: #9d9d9d;
+    margin-top: 1px;
+}
+
+.upload-docs .doc-link {
+    font-size: 15px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+/* ================================================
+ * Upload Documents - Print and Sign Tag
+ * ==============================================*/
+
+.upload-docs .print-and-sign-tag {
+    font-size: 15px;
+    color: #1fb25a;
+    margin-left: 7px;
+}
+
+.upload-docs .print-and-sign-icon {
+    color: #3d3d3d;
+    padding-right: 7px;
+}
+
+/* ================================================
+ * Upload Documents - Download Docs Button Region
+ * ==============================================*/
+
+.upload-docs .download-docs-button-region {
+    margin-top: 30px;
+}
+
+.upload-docs .download-docs-button {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .download-docs-button {
+        width: 300px;
+    }
+}
+
+.upload-docs .download-docs-button-text {
+    position: relative;
+    width: 215px;
+}
+
+.upload-docs .download-docs-button-icon {
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: -22px;
+}
+
+/* ================================================
+ * Upload Documents - Incomplete Docs Region
+ * ==============================================*/
+
+.upload-docs .incomplete-docs-region {
+    margin-top: 25px;
+}
+
+/* ================================================
+ * Upload Documents - Choose Files Region
+ * ==============================================*/
+
+.upload-docs .choose-files-region {
+    margin-top: 7px;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .choose-files-region {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .upload-docs .choose-files-region {
+        display: block;
+        vertical-align: top;
+        width: 100%;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Choose Files Button
+ * ==============================================*/
+
+.upload-docs .upload-instructions-text {
+    font-size: 15px;
+    color: #727272;
+}
+
+.upload-docs .choose-files-button-region {
+    margin-top: 15px;
+}
+
+.upload-docs .choose-files-button {
+    margin-top: 7px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .choose-files-button {
+        width: 300px;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Choose Files Fax Instruction Region
+ * ==============================================*/
+
+.upload-docs .fax-instructions-region {
+    margin-top: 25px;
+}
+
+.upload-docs .fax-instructions-text {
+    font-size: 15px;
+    color: #727272;
+}
+
+.upload-docs .download-fax-coversheet-region {
+    margin-top: 20px;
+}
+
+.upload-docs .download-fax-coversheet-text {
+    font-size: 15px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+/* ================================================
+ * Upload Documents - Upload History Region
+ * ==============================================*/
+
+.upload-docs .upload-history-region {
+    margin-top: 17px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .upload-history-region {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 7px;
+        width: 50%;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .upload-docs .upload-history-region {
+        display: block;
+        vertical-align: top;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+.upload-docs .upload-history-title-text {
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+/* ================================================
+ * Upload Documents - Upload History Items
+ * ==============================================*/
+
+.upload-docs .upload-history-items {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #9d9d9d;
+}
+
+.upload-docs .upload-history-item {
+    position: relative;
+    height: 16px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+    .upload-docs .upload-history-item:hover {
+        color: #208ddc;
+    }
+
+.upload-docs .upload-history-icon {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.upload-docs .upload-history-item-name {
+    display: inline-block;
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 140px;
+}
+
+.upload-docs .upload-history-item-date {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+
+.upload-docs .upload-history-item-time {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.upload-docs .upload-history-item-just-uploaded {
+    position: absolute;
+    top: 0px;
+    right: 140px;
+    color: #fff;
+    background-color: #d9534f;
+    padding: 0px 2px;
+}
+
+/* ================================================
+ * Upload Documents - Continue Button Region
+ * ==============================================*/
+
+.upload-docs .continue-button-region {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .continue-button-region {
+        position: absolute;
+        width: 50%;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+.upload-docs .continue-button {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .continue-button {
+        width: 300px;
+        float: right;
+    }
+}
+
+/* ================================================
+ * Upload Documents - Needs Disclosure Region
+ * ==============================================*/
+
+.upload-docs .needs-disclosure-region {
+    margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+    .upload-docs .needs-disclosure-region {
+        position: absolute;
+        width: 51%;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.upload-docs .needs-disclosure-text {
+    font-size: 13px;
+    color: #9d9d9d;
+    margin-top: 1px;
+}
+
+
+
+/* ================================================
+ * My Documents - Needs Disclosure Region
+ * ==============================================*/
+
+.my-docs {
+    margin-top: 20px;
+}
+
+    .my-docs .my-docs-region {
+        margin-top: 17px;
+        margin-bottom: 40px;
+    }
+
+    .my-docs .my-docs-title-text {
+        font-size: 15px;
+        color: #3d3d3d;
+        font-weight: bold;
+    }
+
+    .my-docs .my-docs-items {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #9d9d9d;
+        /*color: green;*/
+    }
+
+    .my-docs .my-docs-item {
+        position: relative;
+        height: 16px;
+        margin-bottom: 7px;
+        cursor: pointer;
+    }
+
+    .my-docs .my-docs-icon {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .my-docs .my-docs-item-name {
+        display: inline-block;
+        width: 100%;
+        padding-left: 17px;
+        padding-right: 140px;
+        color: #3d3d3d;
+    }
+
+    .my-docs .my-docs-item-date {
+        position: absolute;
+        top: 0px;
+        right: 70px;
+    }
+
+    .my-docs .my-docs-item {
+        color: #3d3d3d;
+    }
+
+        .my-docs .my-docs-item:hover {
+            color: #208ddc;
+        }
+
+    .my-docs .my-docs-item-name:hover {
+        color: #208ddc;
+    }
+
+
+/*.my-docs-banner-icon {
+    image-s: url('fonts/consumer-site.svg?hvl4b8#consumer-site') format('svg');
+}*/
+/*==================================================
+ * Appraisal.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-03-05
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ *
+ * Special Breakpoint at 415px to break out the forms more horizontally.
+ * 
+ * ===============================================*/
+
+.appraisal {
+    position: relative;
+    margin-top: 10px;
+}
+
+    /* ================================================
+ * Appraisal - Regions Max Width
+ * ==============================================*/
+
+    .appraisal .products-region,
+    .appraisal .payment-info-region,
+    .appraisal .contact-region,
+    .appraisal .button-region,
+    .appraisal .disclaimer-region {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media (min-width: 900px) {
+    .appraisal .products-region,
+    .appraisal .payment-info-region,
+    .appraisal .contact-region,
+    .appraisal .button-region,
+    .appraisal .disclaimer-region {
+        width: 380px;
+    }
+}
+
+/* ================================================
+ * Appraisal- Top Region
+ * ==============================================*/
+
+.appraisal .top-region {
+    position: relative;
+    min-height: 500px;
+}
+
+/* ================================================
+ * Appraisal- Center Region
+ * ==============================================*/
+
+@media (min-width: 900px) {
+    .appraisal .center-region {
+        width: 815px;
+        margin: 20px auto;
+        text-align: center;
+        border-top: 1px solid #bdbebe;
+        /*white-space: nowrap;*/
+    }
+}
+
+@media (min-width: 1280px) {
+    .appraisal .center-region {
+        width: 100%;
+        display: inline-block;
+        margin: 0px;
+        text-align: left;
+        border-top: none;
+    }
+}
+
+/* ================================================
+ * Appraisal- Products Region
+ * ==============================================*/
+
+@media (min-width: 1280px) {
+    .appraisal .products-region {
+        margin-top: 40px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* ================================================
+ * Appraisal- Payment Info Region
+ * ==============================================*/
+
+.appraisal .payment-info-region {
+    margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+    .appraisal .payment-info-region {
+        margin-top: 40px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .appraisal .payment-info-region {
+        position: absolute;
+        top: 0px;
+        left: 450px;
+    }
+}
+
+/* ================================================
+ * Appraisal - Dual Input Spaced Validation Region
+ * ==============================================*/
+
+.appraisal .dual-input-spaced-validation-region {
+    text-align: left;
+    padding-left: 51%;
+}
+
+/* ================================================
+ * Appraisal- Contact Region
+ * ==============================================*/
+
+.appraisal .contact-region {
+    margin-top: 40px;
+}
+
+@media (min-width: 900px) {
+    .appraisal .contact-region {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .appraisal .contact-region {
+        float: right;
+    }
+}
+
+/* ================================================
+ * Appraisal - Custom Form Group
+ * ==============================================*/
+
+.appraisal .cv-form-group {
+    min-height: 35px;
+    margin-bottom: 9px;
+}
+
+@media (min-width: 415px) {
+    .appraisal .cv-form-group .control-label {
+        position: relative;
+        min-height: 1px;
+        text-align: left;
+        float: left;
+        width: 36%;
+    }
+
+    .appraisal .cv-form-group .control-input {
+        float: left;
+        width: 64%;
+    }
+}
+
+/* ================================================
+ * Appraisal - Number Circle
+ * ==============================================*/
+
+.appraisal .number-circle {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+/* ================================================
+ * Appraisal - Step Title Region
+ * ==============================================*/
+
+.appraisal .step-title-region {
+    padding-bottom: 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (min-width: 900px) {
+    .appraisal .step-title-region {
+        text-align: left;
+    }
+}
+
+/* ================================================
+ * Appraisal - Step Title Text Region
+ * ==============================================*/
+
+.appraisal .step-title-text-region {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.appraisal .step-title-text {
+    font-size: 17px;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    .appraisal .number-circle {
+        top: 3px;
+    }
+
+    .appraisal .step-title-text {
+        font-size: 21px;
+    }
+}
+
+/* ================================================
+ * Appraisal - Product Row
+ * ==============================================*/
+
+.appraisal .product-row {
+    position: relative;
+    font-size: 15px;
+    color: #3d3d3d;
+    margin-bottom: 7px;
+}
+
+.appraisal .product-name {
+    padding-right: 50px;
+}
+
+.appraisal .products-price {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* ================================================
+ * Appraisal - Product Total Row
+ * ==============================================*/
+
+.appraisal .product-total-row {
+    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #1fb25a;
+    font-weight: bold;
+    height: 20px;
+}
+
+.appraisal .product-total-label {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.appraisal .product-total-price {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* ================================================
+ * Appraisal - Contact Controls Region
+ * ==============================================*/
+
+.appraisal .special-instructions-label {
+    margin-top: 20px;
+    margin-bottom: 21px;
+}
+
+.appraisal .special-instructions-textarea {
+    height: 120px;
+    font: 15px;
+    color: #3d3d3d;
+}
+
+/* ================================================
+ * Upload Documents - Bottom Region
+ * ==============================================*/
+
+.appraisal .bottom-region {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    /*    border-top: 1px solid #bdbebe;*/
+    min-height: 60px;
+}
+
+@media (min-width: 900px) {
+    .appraisal .bottom-region {
+        width: 815px;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .appraisal .button-region {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .appraisal .bottom-region {
+        width: 100%;
+    }
+
+    .appraisal .button-region {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+/* ================================================
+ * Appraisal - Button Region
+ * ==============================================*/
+
+.appraisal .button-region {
+    min-height: 40px;
+}
+
+.appraisal .skip-button-region,
+.appraisal .order-button-region {
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+.appraisal .skip-button,
+.appraisal .order-button {
+    width: 100%;
+}
+
+@media (min-width: 415px) {
+    .appraisal .skip-button-region {
+        float: left;
+        width: 34%;
+    }
+
+    .appraisal .order-button-region {
+        float: right;
+        width: 64%;
+    }
+}
+
+/* ================================================
+ * Appraisal - Disclaimer Region
+ * ==============================================*/
+
+.appraisal .disclaimer-region {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.appraisal .disclaimer-text {
+    font-size: 10px;
+    color: #9d9d9d;
+}
+
+@media (min-width: 900px) {
+    .appraisal .disclaimer-region {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .appraisal .disclaimer-region {
+        top: -180px;
+    }
+}
+
+
+/*==================================================
+ * Docusign-Instructions.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-03-18
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ *
+ * ===============================================*/
+
+.docusign-instructions {
+    /*    padding-bottom: 70px;*/
+}
+
+    /* ================================================
+ * Docusign Instructions - Step Title Region
+ * ==============================================*/
+
+    .docusign-instructions .step-title-region {
+        position: relative;
+        padding-bottom: 15px;
+        vertical-align: top;
+    }
+
+@media (min-width: 900px) {
+    .docusign-instructions .step-title-region {
+        text-align: left;
+    }
+}
+
+/* ================================================
+ * Docusign Instructions - Number Circle
+ * ==============================================*/
+
+.docusign-instructions .number-circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* ================================================
+ * Docusign Instructions - Step Title Text Region
+ * ==============================================*/
+
+.docusign-instructions .step-title-text-region {
+    padding: 0px 0px 0px 30px;
+}
+
+.docusign-instructions .step-title-text {
+    font-size: 15px;
+    color: #3d3d3d;
+}
+
+@media (min-width: 1280px) {
+    .docusign-instructions .step-title-text-region {
+        height: 40px;
+    }
+}
+
+/* ================================================
+ * Docusign Instructions - Columns
+ * ==============================================*/
+
+.docusign-instructions .left-column,
+.docusign-instructions .right-column {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+@media (min-width: 1280px) {
+    .docusign-instructions .left-column {
+        float: left;
+    }
+
+    .docusign-instructions .right-column {
+        float: right;
+    }
+}
+
+/* ================================================
+ * Docusign Instructions - Step Img
+ * ==============================================*/
+
+.docusign-instructions .step-img {
+    width: 100%;
+}
+
+/* ================================================
+ * Docusign Instructions - Bottom Region
+ * ==============================================*/
+
+.docusign-instructions .bottom-region {
+    margin-top: 20px;
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (min-width: 1280px) {
+    .docusign-instructions .bottom-region {
+        float: right;
+        max-width: 100%;
+    }
+}
+
+/* ================================================
+ * Docusign Instructions - Continue Button Region
+ * ==============================================*/
+
+.docusign-instructions .continue-button {
+    width: 240px;
+}
+
+@media (min-width: 1280px) {
+    .docusign-instructions .continue-button {
+        float: right;
+    }
+}

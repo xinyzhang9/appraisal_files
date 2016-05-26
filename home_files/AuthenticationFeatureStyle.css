@@ -1,0 +1,393 @@
+﻿/*==================================================
+ * AuthenticationFeatureStyle.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-22
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.authentication-content {
+    padding-top: 0px;
+}
+
+.authentication-content .txt-for-disclaimer {
+    font-size: 10px;
+    color: #9d9d9d;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*==================================================
+ * Sign In - Sign In Section
+ * ===============================================*/
+
+.authentication .sign-in-section {
+    margin-top: 50px;
+    width: 100%;
+    background: #FFF;
+    padding: 20px 0px;
+    position: relative;
+}
+
+/*==================================================
+ * Sign In - Bar Well Effect
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .authentication .bar-well:before,
+    .authentication .bar-well:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        top: 0;
+        bottom: 0;
+        left: 20%;
+        right: 20%;
+        -moz-border-radius: 300px / 15px;
+        border-radius: 300px / 15px;
+    }
+}
+
+/*==================================================
+ * Sign In - Online Section
+ * ===============================================*/
+
+.authentication .sign-in-section.online {
+    min-height: 250px;
+}
+
+.authentication .online-section {
+    margin-top: 10px;
+}
+
+.authentication .sign-in-button {
+    margin-top: 11px;
+    height: 40px;
+}
+
+/*==================================================
+ * Sign In - Online Links Section
+ * ===============================================*/
+
+.authentication .online-links-section {
+    margin-top: 21px;
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.authentication .forgot-password-text {
+    float: left;
+    font-size: 15px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+.authentication .forgot-password-text.pin-auth {
+    float: none;
+}
+
+.authentication .create-account-text {
+    float: right;
+    font-size: 15px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+/*==================================================
+ * Sign In - Offline Section
+ * ===============================================*/
+
+.authentication .sign-in-section.offline {
+    min-height: 420px;
+}
+
+@media (min-width: 768px) {
+    .authentication .sign-in-section.offline {
+        min-height: 300px;
+    }
+}
+
+.authentication .update-password-button {
+    margin-top: 21px;
+}
+
+/*==================================================
+ * Sign In - Inputs
+ * ===============================================*/
+
+.authentication .form-control {
+    border-color: #BDBEBE;
+}
+
+.authentication .password-input {
+    color: #9d9d9d;
+    letter-spacing: 2px;
+}
+
+/*==================================================
+ * Sign In - Validation
+ * ===============================================*/
+
+.authentication .validation-group.invalid > input,
+.authentication .validation-group > input.invalid {
+    color: red !important;
+    border-color: #ef1126;
+    background-color: #fdeaea;
+}
+
+.authentication .validation-group.invalid > .input-state {
+    position: absolute;
+    top: 7px;
+    right: 21px;
+    z-index: 100;
+    color: red !important;
+}
+
+.authentication .validation-group.invalid.empty-email > .input-state:after {
+    content: "please enter email";
+}
+
+.authentication .validation-group.invalid.empty-password > .input-state:after {
+    content: "please enter password";
+}
+
+/*==================================================
+ * DashboardSignInBanner.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-22
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.dashboard-sign-in-banner {
+    position: relative;
+    margin-top: 0px;
+    background-color: #f9f9f9;
+    height: 150px;
+    padding: 10px 0px 0px 20px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-sign-in-banner {
+        padding-top: 30px;
+    }
+}
+
+/*==================================================
+ * Dashboard Sign In Banner - Title Region
+ * ===============================================*/
+
+.dashboard-sign-in-banner .banner-title-region {
+    position: relative;
+    display: block;
+    max-width: 510px;
+    padding-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-left: inherit;
+}
+
+.dashboard-sign-in-banner .banner-title-text-region {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -40px;
+}
+
+.dashboard-sign-in-banner .banner-title-text {
+    font-size: 21px;
+}
+
+.dashboard-sign-in-banner .banner-subtitle-text {
+    font-size: 17px;
+}
+
+/*==================================================
+ * Dashboard Sign In Banner - Icon
+ * ===============================================*/
+
+.dashboard-sign-in-banner .banner-icon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .dashboard-sign-in-banner .banner-icon {
+        position: absolute;
+        left: -10px;
+        top: 0px;
+        display: inline-block;
+        font-size: 50px;
+        color: #1FB25A;
+    }
+}
+
+/*==================================================
+ * SecureLinkSignInBanner.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-22
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.secure-link-sign-in-banner {
+    margin-top: 50px;
+}
+
+/*==================================================
+ * SecureLink Sign In Banner - Logo
+ * ===============================================*/
+
+.secure-link-sign-in-banner .sign-in-logo {
+    font-size: 105px;
+}
+
+/*==================================================
+ * SecureLink Sign In Banner - Explanation Section 
+ * ===============================================*/
+
+.secure-link-sign-in-banner .sign-in-explanation-section {
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.secure-link-sign-in-banner .explanation-text {
+    font-size: 17px;
+    color: #3d3d3d;
+}
+
+.secure-link-sign-in-banner .explanation-text-green {
+    font-size: 17px;
+    color: #1fb25a;
+    font-weight: bold;
+}
+
+/*==================================================
+ * Reset Password Page
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-23
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.reset-password-content {
+    padding-top: 50px;
+}
+
+/*==================================================
+ * Reset Password - Sign In Section
+ * ===============================================*/
+
+.reset-password .form-section {
+    width: 100%;
+    background: #FFF;
+    padding: 20px 0px;
+    position: relative;
+    height: 350px;
+}
+
+/*==================================================
+ * Reset Password - Bar Well Effect
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .reset-password .bar-well:before,
+    .reset-password .bar-well:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        top: 0;
+        bottom: 0;
+        left: 20%;
+        right: 20%;
+        -moz-border-radius: 300px / 15px;
+        border-radius: 300px / 15px;
+    }
+}
+
+/*==================================================
+ * Reset Password - Send temp password link
+ * ===============================================*/
+
+.reset-password .send-temp-password-link {
+    margin-top: 5px;
+    color: #208ddc;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .reset-password .send-temp-password-link {
+        position: absolute;
+        top: 3px;
+        right: -150px;
+    }
+}
+
+/*==================================================
+ * Reset Password - Button
+ * ===============================================*/
+
+.reset-password .reset-password-button {
+    margin-top: 21px;
+}
+
+.send-temp-password-modal .modal-dialog {
+    width: 300px;
+    height: 150px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+    .send-temp-password-modal .modal-dialog .send-temp-password-container {
+        margin: 1em;
+    }
+
+
+.send-temp-password-modal .btn {
+    width: 120px;
+}
+
+.notify-modal {
+    margin: 15px;
+}
+
+/*Credit report*/
+.credit-report-title-text-region {
+    display: inline-block;
+    vertical-align: top;
+}
+.credit-report-title-text {
+    font-size: 21px;
+}
+
+.credit-report-subtitle-text {
+    font-size: 17px;
+}
+
+
+@media (min-width: 768px) {
+
+    .authentication-content .control-label.label-wrap {
+        padding-top: 0px;
+        width: 200px;
+        line-height: 17px;
+        white-space: normal;
+    }
+}

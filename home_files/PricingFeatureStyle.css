@@ -1,0 +1,883 @@
+﻿@media (min-width: 1200px) {
+    .center-col-md .control-label {
+        /* at large widths make sure the labels don't overlap with the inputs to their left */
+        padding-left: 70px; 
+    }
+}
+
+.product-grid-select-rate-div .arrow {
+    top: -11px !important;
+    bottom: auto;
+    left: auto !important;
+    right: 250px;
+    margin: 0px;
+}
+
+.advancedSearchPosition .modal-dialog {
+    margin-left: 200px;
+    margin-top: 211px;
+}
+
+.allOptionsPosition .modal-dialog {
+    margin-left: 400px;
+    margin-top: 211px;
+}
+
+allOptionsSize .modal-dialog {
+    width: 600px;
+    height: 500px;
+}
+
+.detailedClosingCostsPosition .modal-dialog {
+    margin-left: 400px;
+    margin-top: 211px;
+}
+
+.pricing-alloptions {
+    margin-top: 5px;
+}
+
+/*==================================================
+ * PricingFeatureStyle.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-02
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * Standard Sizes: 13px, 15px, 17px, 21px, 24px
+ * Colors Used:    #9d9d9d, #3d3d3d, #727272, #208ddc. #1fb25a
+ * ===============================================*/
+
+
+/*
+.advancedSearchPosition .modal-dialog {
+    margin-left: 200px;
+    margin-top: 211px;
+}
+*/
+
+
+/*==================================================
+ * Pricing Screen
+ * ===============================================*/
+
+.pricing-view-body {
+    margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+    .pricing-view-body {
+        margin-top: 90px;
+    }
+}
+
+/*==================================================
+ * Pricing Content Area
+ * ===============================================*/
+
+.pricing-content {
+    padding-top: 20px;
+}
+
+/*==================================================
+ * PricingBanner.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-02
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.pricing-banner {
+    background-color: #f9f9f9;
+    min-height: 55px;
+    padding-top: 11px;
+}
+
+@media (min-width: 768px) {
+    .pricing-banner {
+        background-image: url(images/pricing-filter-bar-bg.jpg);
+        background-size: cover;
+        min-height: 120px;
+        padding-top: 17px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+/*==================================================
+ * Pricing Banner - Picks Region
+ * ===============================================*/
+
+.pricing-banner .pricing-banner-picks-region {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: inherit;
+    line-height: 1.1em;
+}
+
+.pricing-banner .pricing-banner-picks-text {
+    font-size: 13px;
+    color: #727272;
+}
+
+.pricing-banner .pricing-banner-view-other-options-text {
+    font-size: 13px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .pricing-banner .pricing-banner-picks-region {
+        display: none;
+    }
+}
+
+/*==================================================
+ * Pricing Banner - Need Help Region
+ * ===============================================*/
+
+.pricing-banner .pricing-banner-need-help-region {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: inherit;
+    text-align: right;
+    line-height: 1.1em;
+}
+
+.pricing-banner .pricing-banner-need-help-text {
+    font-size: 13px;
+    color: #727272;
+}
+
+.pricing-banner .pricing-banner-need-help-phone {
+    font-size: 13px;
+    color: #1FB25B;
+}
+
+@media (min-width: 768px) {
+    .pricing-banner .pricing-banner-need-help-region {
+        display: none;
+    }
+}
+
+/*==================================================
+ * Pricing Banner - Title Region
+ * ===============================================*/
+
+.pricing-banner .pricing-banner-title-region {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .pricing-banner .pricing-banner-title-region {
+        display: block;
+        float: left;
+    }
+
+    .pricing-banner .pricing-banner-title {
+        font-size: 24px;
+        color: #3d3d3d;
+        font-weight: bold;
+        line-height: 1.25em;
+        margin-top: -4px;
+        padding-right: 80px;
+    }
+
+    .pricing-banner .pricing-banner-subtitle {
+        font-size: 13px;
+        color: #727272;
+        padding-right: 30px;
+        line-height: 1.3em;
+    }
+}
+
+/*==================================================
+ * Pricing Banner - Tiles Region
+ * ===============================================*/
+
+.pricing-banner .filter-tiles-region {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .pricing-banner .filter-tiles-region {
+        display: block;
+        line-height: 2em;
+        float: left;
+        white-space: nowrap;
+    }
+
+    .pricing-banner .filter-tile {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        background: rgba(249, 249, 249, 0.5);
+        padding-top: 9px;
+        width: 100px;
+        height: 88px;
+        font-size: 27px;
+        color: #3d3d3d;
+        text-align: center;
+        color: #727272;
+        border: 2px solid transparent;
+        line-height: 0.55em;
+        white-space: normal;
+        cursor: pointer;
+    }
+
+        .pricing-banner .filter-tile.active {
+            background: rgba(255, 255, 255, 0.8);
+            color: #208ddc;
+        }
+
+        .pricing-banner .filter-tile:hover {
+            border: 2px solid #208ddc;
+        }
+
+    .pricing-banner .filter-tile-icon {
+        font-size: 35px;
+    }
+
+    .pricing-banner .filter-tile-text {
+        margin-top: 9px;
+        font-size: 15px;
+    }
+
+    .pricing-banner .filter-tile:hover .filter-tile-arrow,
+    .pricing-banner .filter-tile.active .filter-tile-arrow {
+        position: absolute;
+        top: 90px;
+        left: 35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 13px 13px 13px;
+        border-color: transparent transparent rgba(249, 249, 249, 0.5) transparent;
+    }
+
+    .pricing-banner .filter-tile.active .filter-tile-arrow {
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
+
+.pricing-filter-sort-options-button {
+   float:right;
+}
+
+/*==================================================
+ * Pricing Banner - Heart Icon
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .pricing-banner .cv-icon-heart {
+        margin-top: 9px;
+        margin-bottom: 4px;
+        font-size: 21px;
+    }
+}
+
+/*==================================================
+ * PricingSearch.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-03
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+
+/*==================================================
+ * Pricing Search
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .pricing-search {
+        margin-bottom: 10px;
+        padding-left: 0px;
+        white-space: nowrap;
+        z-index: 1000;
+    }
+}
+
+/*==================================================
+ * Pricing Search - Backdrop
+ * ===============================================*/
+
+.pricing-search-backdrop {
+    display: none;
+}
+.pricing-search-backdrop.in {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 999;
+}
+
+/*==================================================
+ * Pricing Search - Form
+ * ===============================================*/
+
+@media (min-width: 768px) {
+    .pricing-search .pricing-search-form {
+        background: #EFEFEF;
+    }
+
+        .pricing-search .pricing-search-form.out {
+            background: #F9F9F9;
+            -webkit-box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.5);
+            width: 615px;
+        }
+
+    .pricing-search .pricing-search-col {
+        vertical-align: top;
+        display: inline-block;
+        width: 192px;
+        padding: 7px 15px 30px 15px;
+    }
+}
+
+/*==================================================
+ * Pricing Search - Form Controls
+ * ===============================================*/
+
+.pricing-search .form-group {
+    margin-bottom: 12px;
+}
+
+.pricing-search .control-label {
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #727272;
+    font-weight: normal;
+}
+
+.pricing-search .form-control {
+    height: 35px;
+}
+
+@media (min-width: 768px) {
+    .pricing-search .form-control {
+        width: 100%;
+    }
+}
+
+.pricing-search-label-eligible-for-va-loan  {
+   margin-top: 20px;
+}
+
+.pricing-search-label-first-time-home-buyer  {
+   margin-top: 20px;
+}
+
+  /*
+        Supported by FireFox.
+        Not Supported by IE.
+        Not Supported by Chrome.
+*/
+.pricing-search-select-text-overflow-ellipse  {
+    padding-right: 30px !important;
+    overflow:hidden; 
+    white-space:nowrap;
+    -ms-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+
+.pricing-search-down-payment-separator  {
+   width: 5px; 
+   color:lightgray;
+}
+
+.pricing-search-down-payment-amount  {  
+    border:none; 
+    border-color:transparent; 
+    width: 85px; 
+    outline:none !important;
+}
+
+.pricing-search-down-payment-percentage  {     
+    float:right; 
+    border:none; 
+    border-color:transparent; 
+    width: 35px; 
+    outline:none !important; 
+    text-align:center;
+}
+
+
+ /*
+     we apply HTML5 CSS to add "x" to input on Chrome.
+     
+ */
+/*input[type="search"] {
+  -webkit-appearance: searchfield;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}*/
+
+
+/*==================================================
+ * Pricing Search - Desired Loan Amount
+ * ===============================================*/
+
+.pricing-search .desired-loan-amount-region {
+    margin-top: -1px;
+    padding-left: 5px;
+}
+
+.pricing-search .desired-loan-amount-text {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*==================================================
+ * Pricing Search - Advanced Options Link
+ * ===============================================*/
+
+.pricing-search .advanced-options-region {
+    margin-top: 30px;
+    text-align: center;
+    color: #208ddc;
+}
+
+.pricing-search .advanced-options-text {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.pricing-search .advanced-options-caret {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .pricing-search .advanced-options-region {
+        display: none;
+    }
+}
+
+/*==================================================
+ * Pricing Search - Get My Rates Button
+ * ===============================================*/
+
+.pricing-search .get-my-rates-button-region {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.pricing-search .btn-get-my-rates {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .pricing-search .get-my-rates-button-region {
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .pricing-search .btn-get-my-rates {
+        width: 100%;
+    }
+}
+
+/*==================================================
+ * Pricing Search - Advanced Search Region
+ * ===============================================*/
+
+.pricing-search .advanced-search-region {
+    display: none;
+}
+
+.pricing-search .pricing-search-form.out .advanced-search-region {
+    display: inline-block;
+    position: relative;
+}
+
+.pricing-search .advanced-search-close {
+    position: absolute;
+    top: -11px;
+    right: -39px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 0px #fff;
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    background: #000000;
+    border: solid 1px #000000;
+    width: 23px;
+    height: 23px;
+    padding-left: 5.5px;
+    cursor: pointer;
+}
+
+
+
+/*==================================================
+ * PricingGrid.css
+ * 
+ * Created By: Adam Alt
+ * Created On: 2016-02-13
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * 
+ * ===============================================*/
+
+.pricing-grid-region {
+    overflow: hidden;
+}
+
+.pricing-region-no-products{
+     color:#9d9d9d; 
+     font-size:17px;
+}
+/*==================================================
+ * Pricing Grid Row
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-row {
+    padding: 25px 0px 0px 0px;
+    border-top: 1px solid #D8D8D8;
+    height: 100px;
+    white-space: nowrap;
+}
+.pricing-grid .pricing-grid-col {
+    float: left;
+}
+
+/*==================================================
+ * Pricing Grid - Loan Term Column
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-loan-term-text {
+    font-weight: bold;
+    margin-top: 7px;
+    color: #3d3d3d;
+    font-size: 17px;
+    line-height: .9em;
+}
+
+
+/*==================================================
+ * Pricing Grid - Columns
+ * ===============================================*/
+
+.pricing-grid .loan-type-col {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    white-space: nowrap;
+}
+.pricing-grid .fav-col {
+    text-align: right;
+    margin-top: 11px;
+    margin-left: 11%;
+    width: 12%;
+}
+.pricing-grid .apr-col,
+.pricing-grid .payment-col {
+    margin-left: 10%;
+    width: 15%;
+}
+.pricing-grid .est-closing-cost-col {
+    display: none;
+}
+.pricing-grid .pricing-grid-action-col {
+    text-align: center;
+    float: right;
+    margin-top: -10px;
+}
+.pricing-grid .pricing-grid-view-details-section {
+    margin-top: 9px;
+}
+@media (min-width: 1280px) {
+    .pricing-grid .fav-col {
+        margin-left: 15%;
+        width: 3%;
+    }
+    .pricing-grid .apr-col,
+    .pricing-grid .payment-col,
+    .pricing-grid .est-closing-cost-col {
+        margin-left: 6%;
+        width: 11%;
+    }
+    .pricing-grid .est-closing-cost-col {
+        display: block;
+    }
+    .pricing-grid .pricing-grid-action-col {
+        width: 25%;
+        margin-top: 4px;
+    }
+    .pricing-grid .pricing-grid-view-details-section {
+        float: left;
+        margin-top: 11px;
+    }
+    .pricing-grid .pricing-grid-button-section {
+        float: right;
+    }
+}
+
+/*==================================================
+ * Pricing Grid - Select Rate Button
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-btn-select-rate {
+    width: 123px;
+    height: 41px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*==================================================
+ * Pricing Grid - Labels
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-label {
+    font-size: 24px;
+    color: #3d3d3d;
+    line-height: 1em;
+}
+.pricing-grid .pricing-grid-label-bold {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1em;
+}
+.pricing-grid .pricing-grid-grey-label {
+    font-size: 12px;
+    color: #bdbebe;
+}
+.pricing-grid .cv-icon-no-cost-text {
+    color: #1FB25A;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+/*==================================================
+ * Pricing Grid - Info Icon
+ * ===============================================*/
+
+.pricing-grid .my-icon-info {
+    display: none;
+}
+@media (min-width: 1280px) {
+    .pricing-grid .my-icon-info {
+        display: block;
+        position: absolute;
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 15px;
+        color: #BDBEBE;
+        cursor: pointer;
+    }
+}
+
+/*==================================================
+ * Pricing Grid - Heart Icons
+ * ===============================================*/
+
+.pricing-grid .cv-icon-heart,
+.pricing-grid .cv-icon-heart-o {
+    color: #208DDC;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/*==================================================
+ * Pricing Grid - Relativity Bar
+ * ===============================================*/
+
+.pricing-grid .relativity-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 2px;
+}
+.pricing-grid .relativity-bar-apr {
+    background-color: #d62827;
+}
+.pricing-grid .relativity-bar-payment {
+    background-color: #15b7cd;
+}
+.pricing-grid .relativity-bar-closing-cost {
+    background-color: #30b34a;
+}
+
+/*==================================================
+ * Pricing Grid - Send My Report Region
+ * ===============================================*/
+
+.pricing-grid .send-my-report-region {
+    position: relative;
+    border-top: 1px solid #D8D8D8;
+    padding-top: 15px;
+    color: #94949a;
+    font-size: 15px;
+    min-height: 80px;
+}
+.pricing-grid .send-my-report-explanation {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #3d3d3d;
+}
+.pricing-grid .send-my-report-explanation .cv-icon-heart-o {
+    margin-top: -5px;
+}
+@media (min-width: 768px) {
+    .pricing-grid .send-my-report-button-region {
+        position: absolute;
+        top: 15px;
+    }
+    .pricing-grid .send-my-report-explanation {
+        position: absolute;
+        top: 7px;
+        left: 150px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*==================================================
+ * Pricing Grid - View Disclaimers Region
+ * ===============================================*/
+
+.pricing-grid .view-disclaimers-region {
+    margin-bottom: 100px;
+}
+.pricing-grid .report-disclaimer-content-show,
+.pricing-grid .report-disclaimer-content-hide {
+    font-size: 13px;
+    color: #9d9d9d;
+    cursor: pointer;
+}
+.pricing-grid .report-disclaimer-content-hide {
+    color: #208ddc;
+}
+.pricing-grid .report-disclaimer-content {
+    margin-top: 10px;
+    text-align: justify;
+    color: #727272;
+    font-size: 12px;
+}
+.pricing-grid .view-disclaimers-icon,
+.pricing-grid .hide-disclaimers-icon {
+    position: relative;
+    top: 4px;
+    left: 1px;
+    color: #757575;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.hide-disclaimers-color {
+    color: #208ddc !important;
+}
+
+/*==================================================
+ * View Product Details
+ * 
+ * Created By: Jacob Nix
+ * Created On: 2016-02-04
+ * 
+ * Breakpoints at: 320px(mobile), 768px(medium), and 1280px(desktop)
+ * ===============================================*/
+
+/*==================================================
+ * Pricing Grid - View Details Link
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-view-details-link {
+    font-size: 15px;
+    color: #208ddc;
+    cursor: pointer;
+}
+
+/*==================================================
+ * Pricing Grid - View Details Popover
+ * ===============================================*/
+
+.pricing-grid .pricing-grid-view-details .popover.in {
+    max-width: none;
+    left: 345px !important;
+    margin-top: 30px;
+    z-index: 1028;
+}
+.pricing-grid .pricing-grid-view-details .popover.in > .arrow {
+    left: 75%;
+}
+.product-details-container {
+    height: auto;
+    padding: 20px;
+    line-height: 2em;
+    color: #3d3d3d;
+}
+@media (min-width: 1280px) {
+    .product-details-container {
+        width: 910px;
+    }
+}
+.product-details-container .product-details-header {
+    border-bottom: 1px solid #bcbebe;
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    margin-top: -10px;
+    text-align: left;
+    width: 100%;
+}
+.product-details-container .product-details-container-close {
+    position: absolute;
+    top: 7px;
+    right: 13px;
+    width: 19px;
+    height: 17px;
+    border: 1px solid #BDBEBE;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 13px;
+    font-size: 17px;
+    color: #818181;
+    background: #EFEFEF;
+    border-radius: 2px;
+    box-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.product-details-container .product-details-footer-divider {
+    border-top: 1px solid #bcbebe;
+}
+.product-details-container .total-reserves-region {
+    margin-top: 30px;
+}
+.product-details-container .product-details-total-label {
+    color: #000000;
+}
+.product-details-container .product-details-footer {
+    margin-top: 11px;
+    font-size: 16px;
+    color: #000000;
+}
+.product-details-container .sum-value-style {
+    color: #1da955;
+}
+.product-details-container .grand-sum-value-style {
+    color: #1da955;
+    font-weight: bold;
+}
