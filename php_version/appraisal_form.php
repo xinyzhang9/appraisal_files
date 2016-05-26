@@ -12,9 +12,13 @@
 			width: 50%;
 			border: 1px solid gray;
 			padding: 20px;
+			margin: 0 auto;
 		}
 		legend{
 			color: green;
+		}
+		h3{
+			text-align: center;
 		}
 	</style>
 </head>
