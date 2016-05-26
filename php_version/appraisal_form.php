@@ -49,7 +49,7 @@
 				  <div class = "form-group">
 				  	<label for="lender-state">State</label>
 				  	<br>
-				  	<select name = "lender-state" name = "lender-state">
+				  	<select name = "lender-state" class="form-control">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -151,7 +151,7 @@
 				  <div class = "form-group">
 				  	<label for="borrower-state">State</label>
 				  	<br>
-				  	<select name = "borrower-state">
+				  	<select name = "borrower-state" class="form-control">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -230,7 +230,7 @@
 			  	<div class="form-group">
 				    <label for="property-type">Property Type</label>
 				    <br>
-				    <select name="property-type" id="property-type">
+				    <select name="property-type" id="property-type" class="form-control">
 				    	<option value="">Please Select...</option>
 				    	<option value="SingleFamily">Single Family</option>
 				    	<option value="MultiFamily">Multi Family</option>
@@ -242,7 +242,7 @@
 				 <div class="form-group">
 				    <label for="loan-type">Loan Type</label>
 				    <br>
-				    <select name="loanType" id="loan-type">
+				    <select name="loanType" id="loan-type" class="form-control">
 						<option value="">Please Select...</option>
 						<option value="Refinance">Refinance</option>
 						<option value="Purchase">Purchase</option>
@@ -256,7 +256,7 @@
 				 <div class="form-group">
 				    <label for="appraisal-type">Type of Appraisal Form</label>
 				    <br>
-				    <select name="appraisal-type" id="appraisal-type">
+				    <select name="appraisal-type" id="appraisal-type" class="form-control">
 						<option value="">Please Select...</option>
 						<option value="Refinance">Refinance</option>
 						<option value="Purchase">Purchase</option>
