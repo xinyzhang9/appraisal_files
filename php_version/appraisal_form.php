@@ -32,19 +32,32 @@
 				
 				  <div class="form-group">
 				    <label for="lender-name">Lender Name</label>
-				    <input type="text" class="form-control" name = "lender-name" id="lender-name" placeholder="Lender Name">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-user"></span></span>
+				    	<input type="text" class="form-control" name = "lender-name" id="lender-name" placeholder="Lender Name">
+				    </div>
+				    
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-address1">Address Line 1</label>
-				    <input type="text" class="form-control" name = "lender-address1" id="lender-address1" placeholder="Address Line 1">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-map-marker"></span></span>
+				    	<input type="text" class="form-control" name = "lender-address1" id="lender-address1" placeholder="Address Line 1">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-address2">Address Line 2</label>
-				    <input type="text" class="form-control" name = "lender-address2" id="lender-address2" placeholder="Address Line 2">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-map-marker"></span></span>
+				    	<input type="text" class="form-control" name = "lender-address2" id="lender-address2" placeholder="Address Line 2">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-city">City</label>
-				    <input type="text" class="form-control" name = "lender-city" id="lender-city" placeholder="City">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-record"></span></span>
+				    	<input type="text" class="form-control" name = "lender-city" id="lender-city" placeholder="City">
+				    </div>
 				  </div>
 				  <div class = "form-group">
 				  	<label for="lender-state">State</label>
@@ -105,27 +118,45 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-zip">Zip</label>
-				    <input type="number" class="form-control" name = "lender-zip" id="lender-zip" placeholder="Zip">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-barcode"></span></span>
+				    	<input type="number" class="form-control" name = "lender-zip" id="lender-zip" placeholder="Zip">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-phone">Phone</label>
-				    <input type="tel" class="form-control" name = "lender-phone" id="lender-phone" placeholder="Phone">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-earphone"></span></span>
+				    	<input type="tel" class="form-control" name = "lender-phone" id="lender-phone" placeholder="Phone">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-fax">Fax</label>
-				    <input type="tel" class="form-control" name = "lender-fax" id="lender-fax" placeholder="Fax">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-transfer"></span></span>
+				    	<input type="tel" class="form-control" name = "lender-fax" id="lender-fax" placeholder="Fax">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="processor-name">Processor/Originator Name</label>
-				    <input type="text" class="form-control" name = "processor-name" id="processor-name" placeholder="Processor/Original Name">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-user"></span></span>
+				    	<input type="text" class="form-control" name = "processor-name" id="processor-name" placeholder="Processor/Original Name">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-email">Email Address</label>
-				    <input type="email" class="form-control" name = "lender-email" id="lender-email" placeholder="Email Address">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-envelope"></span></span>
+				  	 	<input type="email" class="form-control" name = "lender-email" id="lender-email" placeholder="Email Address">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="email-for-ca">Email Address for Completed Appraisal</label>
-				    <input type="email" class="form-control" name = "email-for-ca" id="email-for-ca" placeholder="Email Address for Completed Appraisal">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-envelope"></span></span>
+				    	<input type="email" class="form-control" name = "email-for-ca" id="email-for-ca" placeholder="Email Address for Completed Appraisal">
+				    </div>
 				  </div> 
 			  </fieldset>
 
@@ -134,19 +165,31 @@
 				
 				  <div class="form-group">
 				    <label for="borrower-name">Borrower(s)</label>
-				    <input type="text" class="form-control" name = "borrower-name" id="borrower-name" placeholder="Borrower Name">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-user"></span></span>
+				    	<input type="text" class="form-control" name = "borrower-name" id="borrower-name" placeholder="Borrower Name">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="property-address1">Address Line 1</label>
-				    <input type="text" class="form-control" name = "property-address1" id="property-address1" placeholder="Address Line 1">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-map-marker"></span></span>
+				   		<input type="text" class="form-control" name = "property-address1" id="property-address1" placeholder="Address Line 1">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="property-address2">Address Line 2</label>
-				    <input type="text" class="form-control" name = "property-address2" id="property-address2" placeholder="Address Line 2">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-map-marker"></span></span>
+				    	<input type="text" class="form-control" name = "property-address2" id="property-address2" placeholder="Address Line 2">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-city">City</label>
-				    <input type="text" class="form-control" name = "borrower-city" id="borrower-city" placeholder="City">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-record"></span></span>
+				    	<input type="text" class="form-control" name = "borrower-city" id="borrower-city" placeholder="City">
+				    </div>
 				  </div>
 				  <div class = "form-group">
 				  	<label for="borrower-state">State</label>
@@ -207,19 +250,31 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-zip">Zip</label>
-				    <input type="number" class="form-control" name = "borrower-zip" id="borrower-zip" placeholder="Zip">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-barcode"></span></span>
+				    	<input type="number" class="form-control" name = "borrower-zip" id="borrower-zip" placeholder="Zip">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-home-phone">Home Phone</label>
-				    <input type="tel" class="form-control" name = "borrower-home-phone" id="borrower-home-phone" placeholder="Home Phone">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-phone-alt"></span></span>
+				    	<input type="tel" class="form-control" name = "borrower-home-phone" id="borrower-home-phone" placeholder="Home Phone">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-work-phone">Work Phone</label>
-				    <input type="tel" class="form-control" name = "borrower-work-phone" id="borrower-work-phone" placeholder="Work Phone">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-earphone"></span></span>
+				    	<input type="tel" class="form-control" name = "borrower-work-phone" id="borrower-work-phone" placeholder="Work Phone">
+				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-cell-phone">Cell Phone</label>
-				    <input type="tel" class="form-control" name = "borrower-cell-phone" id="borrower-cell-phone" placeholder="Cell Phone">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-phone"></span></span>
+				    	<input type="tel" class="form-control" name = "borrower-cell-phone" id="borrower-cell-phone" placeholder="Cell Phone">
+				    </div>
 				  </div>
 				  
 				 
@@ -273,15 +328,24 @@
 			  	<legend>Contact Information (if other than borrower)</legend>
 				<div class="form-group">
 				    <label for="contact-name">Name</label>
-				    <input type="text" class="form-control" name = "contact-name" id="contact-name" placeholder="Name">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-user"></span></span>
+				    	<input type="text" class="form-control" name = "contact-name" id="contact-name" placeholder="Name">
+				    </div>
 				</div>
 				<div class="form-group">
 				    <label for="contact-phone">Phone</label>
-				    <input type="tel" class="form-control" name = "contact-phone" id="contact-phone" placeholder="Phone">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-earphone"></span></span>
+				    	<input type="tel" class="form-control" name = "contact-phone" id="contact-phone" placeholder="Phone">
+				    </div>
 				</div>
 				<div class="form-group">
 				    <label for="contact-cell">Cell</label>
-				    <input type="tel" class="form-control" name = "contact-cell" id="contact-cell" placeholder="Cell">
+				    <div class = "input-group">
+				    	<span class="input-group-addon"><span class = "glyphicon glyphicon-phone"></span></span>
+				    	<input type="tel" class="form-control" name = "contact-cell" id="contact-cell" placeholder="Cell">
+				    </div>
 				</div>
 			  </fieldset>
 
