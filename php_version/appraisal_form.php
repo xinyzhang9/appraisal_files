@@ -26,13 +26,13 @@
 	<h3>Appraisal Form</h2>
 		<hr>
 		<div class = "form">
-			<form>
+			<form action="process.php" method="post">
 				<fieldset>
 					<legend>Lender/Company Information</legend>
 				
 				  <div class="form-group">
-				    <label for="lendername">Lender Name</label>
-				    <input type="text" class="form-control" name = "lender-name" id="lendername" placeholder="Lender Name">
+				    <label for="lender-name">Lender Name</label>
+				    <input type="text" class="form-control" name = "lender-name" id="lender-name" placeholder="Lender Name">
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-address1">Address Line 1</label>
