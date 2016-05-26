@@ -31,3 +31,5 @@ if(!move_uploaded_file($_FILES['file_upload']['tmp_name'], 'upload/' . $_FILES['
 }
 
 die('File uploaded successfully.');
+
+?>
