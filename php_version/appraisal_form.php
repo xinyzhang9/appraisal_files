@@ -293,7 +293,7 @@
 				</div>
 			  </fieldset>
 			  	
-				<button type="submit" class="btn btn-default">Submit</button>
+				<button type="submit" class="btn btn-default">Submit Order</button>
 
 			</form>
 		</div>
