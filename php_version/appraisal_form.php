@@ -105,11 +105,11 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-phone">Phone</label>
-				    <input type="number" class="form-control" name = "lender-phone" id="lender-phone" placeholder="Phone">
+				    <input type="tel" class="form-control" name = "lender-phone" id="lender-phone" placeholder="Phone">
 				  </div>
 				  <div class="form-group">
 				    <label for="lender-fax">Fax</label>
-				    <input type="number" class="form-control" name = "lender-fax" id="lender-fax" placeholder="Fax">
+				    <input type="tel" class="form-control" name = "lender-fax" id="lender-fax" placeholder="Fax">
 				  </div>
 				  <div class="form-group">
 				    <label for="processor-name">Processor/Originator Name</label>
@@ -121,7 +121,7 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="email-for-ca">Email Address for Completed Appraisal</label>
-				    <input type="text" class="form-control" name = "email-for-ca" id="email-for-ca" placeholder="Email Address for Completed Appraisal">
+				    <input type="email" class="form-control" name = "email-for-ca" id="email-for-ca" placeholder="Email Address for Completed Appraisal">
 				  </div> 
 			  </fieldset>
 
@@ -202,20 +202,20 @@
 					</select>				
 				  </div>
 				  <div class="form-group">
-				    <label for="zip">Zip</label>
-				    <input type="number" class="form-control" name = "zip" id="zip" placeholder="Zip">
+				    <label for="borrower-zip">Zip</label>
+				    <input type="number" class="form-control" name = "borrower-zip" id="borrower-zip" placeholder="Zip">
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-home-phone">Home Phone</label>
-				    <input type="number" class="form-control" name = "borrower-home-phone" id="borrower-home-phone" placeholder="Home Phone">
+				    <input type="tel" class="form-control" name = "borrower-home-phone" id="borrower-home-phone" placeholder="Home Phone">
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-work-phone">Work Phone</label>
-				    <input type="number" class="form-control" name = "borrower-work-phone" id="borrower-work-phone" placeholder="Work Phone">
+				    <input type="tel" class="form-control" name = "borrower-work-phone" id="borrower-work-phone" placeholder="Work Phone">
 				  </div>
 				  <div class="form-group">
 				    <label for="borrower-cell-phone">Cell Phone</label>
-				    <input type="number" class="form-control" name = "borrower-cell-phone" id="borrower-cell-phone" placeholder="Cell Phone">
+				    <input type="tel" class="form-control" name = "borrower-cell-phone" id="borrower-cell-phone" placeholder="Cell Phone">
 				  </div>
 				  
 				 
@@ -273,11 +273,11 @@
 				</div>
 				<div class="form-group">
 				    <label for="contact-phone">Phone</label>
-				    <input type="number" class="form-control" name = "contact-phone" id="contact-phone" placeholder="Phone">
+				    <input type="tel" class="form-control" name = "contact-phone" id="contact-phone" placeholder="Phone">
 				</div>
 				<div class="form-group">
 				    <label for="contact-cell">Cell</label>
-				    <input type="number" class="form-control" name = "contact-cell" id="contact-cell" placeholder="Cell">
+				    <input type="tel" class="form-control" name = "contact-cell" id="contact-cell" placeholder="Cell">
 				</div>
 			  </fieldset>
 
