@@ -15,7 +15,8 @@
 			margin: 0 auto;
 		}
 		legend{
-			color: green;
+			color: #C0392B;
+			font-weight: bold;
 		}
 		h3{
 			text-align: center;
@@ -28,7 +29,7 @@
 		<div class = "form">
 			<form action="process.php" method="post">
 				<fieldset>
-					<legend>Lender/Company Information</legend>
+					<legend><span class = "glyphicon glyphicon-pencil"></span> Lender/Company Information</legend>
 				
 				  <div class="form-group">
 				    <label for="lender-name">Lender Name</label>
@@ -161,7 +162,7 @@
 			  </fieldset>
 
 			  <fieldset>
-					<legend>Borrower/Homeowner Information</legend>
+					<legend><span class = "glyphicon glyphicon-pencil"></span> Borrower/Homeowner Information</legend>
 				
 				  <div class="form-group">
 				    <label for="borrower-name">Borrower(s)</label>
@@ -281,7 +282,7 @@
 			  </fieldset>
 
 			  <fieldset>
-			  	<legend>Property/Loan Information</legend>
+			  	<legend><span class = "glyphicon glyphicon-pencil"></span> Property/Loan Information</legend>
 			  	<div class="form-group">
 				    <label for="property-type">Property Type</label>
 				    <br>
@@ -325,7 +326,7 @@
 			  </fieldset>
 
 			  <fieldset>
-			  	<legend>Contact Information (if other than borrower)</legend>
+			  	<legend><span class = "glyphicon glyphicon-pencil"></span> Contact Information (if other than borrower)</legend>
 				<div class="form-group">
 				    <label for="contact-name">Name</label>
 				    <div class = "input-group">
@@ -350,7 +351,7 @@
 			  </fieldset>
 
 			  <fieldset>
-			  	<legend>Additional Info</legend>
+			  	<legend><span class = "glyphicon glyphicon-pencil"></span> Additional Info</legend>
 			  	<div class="form-group">
 				    <label for="additional-info">Additional Info</label>
 				    <textarea class="form-control" name="additional-info" id="additional-info" rows="10"></textarea>
