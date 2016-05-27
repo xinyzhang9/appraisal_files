@@ -24,7 +24,7 @@
 	</style>
 </head>
 <body>
-	<h3>Appraisal Form</h2>
+	<h3>Appraisal Form</h3>
 		<hr>
 		<div class = "form">
 			<form action="process.php" method="post">
