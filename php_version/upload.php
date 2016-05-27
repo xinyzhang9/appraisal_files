@@ -1,6 +1,5 @@
 
 <?php
-
 // Check for errors
 if($_FILES['file_upload']['error'] > 0){
     die('An error ocurred when uploading.');
@@ -29,7 +28,9 @@ if(file_exists('upload/' . $_FILES['file_upload']['name'])){
 if(!move_uploaded_file($_FILES['file_upload']['tmp_name'], 'upload/' . $_FILES['file_upload']['name'])){
     die('Error uploading file - check destination is writeable.');
 }
+echo "<input type='button' value='Back' onClick='document.location.href=\"index.php\"'/>";
+echo "<br>";
+echo('File uploaded successfully.');
 
-die('File uploaded successfully.');
 
 ?>
